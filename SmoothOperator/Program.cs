@@ -13,8 +13,17 @@ namespace SmoothOperator
             //convert input to type "byte"
             //bytes go from 0 >> 255 (total of 256)
 
-            byte n = byte.Parse(user_in);
-            Console.WriteLine(n);//test
+            byte n = byte.Parse(user_in);       
+
+            //Decrement
+            Console.WriteLine($"Input decremented by 1 : {--n}");
+
+            //Increment
+            Console.WriteLine($"Input incremented by 1 : {++n}");
+
+            //if input is 0 then the decrement will return 255
+        
+            
 
             
         }
