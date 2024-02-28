@@ -88,6 +88,48 @@ namespace ValoresEspeciais
             max = decimal.MaxValue.ToString();
             WriteString("decimal");
 
+            //Line Break for spacing:
+            Console.WriteLine("\n<--------------------------------------->\n");
+
+            //Infinity            
+            
+            //double
+            double dNInf = double.NegativeInfinity;
+            double dPInf = double.PositiveInfinity;
+
+            Console.WriteLine("\ndouble:");
+            Console.WriteLine($"- Negative Infinity: {dNInf}");
+            Console.WriteLine($"- Positive Infinity: {dPInf}");
+
+            //float
+            float fNInf = float.NegativeInfinity;
+            float fPInf = float.PositiveInfinity;
+
+            Console.WriteLine("\nfloat:");
+            Console.WriteLine($"- Negative Infinity: {fNInf}");
+            Console.WriteLine($"- Positive Infinity: {fPInf}");
+            
+            Console.WriteLine("\n<--------------------------------------->\n");
+            //NaN
+
+            Console.WriteLine("\nNaN values:");
+            //via dividing infinity
+            double dNaN_a = dPInf / dPInf;
+            float fNaN_a = fNInf / fNInf;
+
+            Console.WriteLine($"- Double NaN: {dNaN_a}");
+            Console.WriteLine($"- Float NaN: {fNaN_a}");
+
+
+            //direct
+
+            double dNaN_b = double.NaN;
+            float fNaN_b =  float.NaN;
+
+            Console.WriteLine($"- Double direct NaN: {dNaN_b}");
+            Console.WriteLine($"- Float direct NaN: {fNaN_b}"); 
+
+
             
         }
     }
