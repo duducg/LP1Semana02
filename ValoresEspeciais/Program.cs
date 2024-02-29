@@ -129,6 +129,26 @@ namespace ValoresEspeciais
             Console.WriteLine($"- Double direct NaN: {dNaN_b}");
             Console.WriteLine($"- Float direct NaN: {fNaN_b}"); 
 
+            Console.WriteLine("\n<--------------------------------------->\n");
+
+            //Exercise 7 - Overflow and Underflow
+
+            //Overflow
+            
+            uint maxUInt = uint.MaxValue;
+            Console.WriteLine($"Max uint value : {maxUInt}");
+            uint pOverUInt = maxUInt++;
+            Console.WriteLine($"Overflowed uint value : {pOverUInt}");
+
+            Console.WriteLine("\n<--------------------------------------->\n");
+
+
+
+
+
+            
+
+
 
             
         }
