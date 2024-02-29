@@ -154,15 +154,21 @@ namespace ValoresEspeciais
             float fb = float.MaxValue + 1;
             Console.WriteLine($"Max float value + 1 = {fb}"); //doesn't change
 
-
-
-
-
-
+            //float underflow
+            //happens when casting to a less precise type
+            //or when operating with values that that are outside the type's
+            //"digit space range"
+            Console.WriteLine("\n<--------------------------------------->\n");
+            
+            float fc = 0.00005f; //floats have a digit space of 7
+            Console.WriteLine($"Initial float value: {fc}");
+            float fd = fc + 10000.0f; //floats have a digit space of 7
+            Console.WriteLine($"Added float value: {fd}");
+            //data is lost
 
 
             
-
+            
 
 
             
