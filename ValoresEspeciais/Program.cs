@@ -137,10 +137,25 @@ namespace ValoresEspeciais
             
             uint maxUInt = uint.MaxValue;
             Console.WriteLine($"Max uint value : {maxUInt}");
-            uint pOverUInt = maxUInt++;
-            Console.WriteLine($"Overflowed uint value : {pOverUInt}");
+
+            uint pOverUInt = maxUInt++; //returns 0
+            Console.WriteLine($"Overflowed uint value : {pOverUInt}"); 
 
             Console.WriteLine("\n<--------------------------------------->\n");
+
+            //float overflows
+
+            float d = float.MaxValue;
+            Console.WriteLine($"Max float value = {d}"); //default max
+
+            float fa = 2* float.MaxValue;
+            Console.WriteLine($"Max float value x 2 = {fa}"); //infinity
+
+            float fb = float.MaxValue + 1;
+            Console.WriteLine($"Max float value + 1 = {fb}"); //doesn't change
+
+
+
 
 
 
